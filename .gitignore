@@ -1,0 +1,8 @@
+out/
+video/gameplay.mp4
+video/scene-*.mp4
+video/endcard-9x16.webm
+video/render.log
+video/frames/
+node_modules/
+.DS_Store

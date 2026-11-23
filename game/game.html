@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Block Dodge — built from one prompt</title>
+<style>
+  body { margin: 0; background: #0d0714; color: #f5f3ff; font-family: system-ui, sans-serif;
+         display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
+  h1 { font-size: 20px; margin: 18px 0 4px; letter-spacing: 2px; }
+  p { margin: 4px 0 12px; color: #a1a1aa; font-size: 14px; }
+  #score { font-size: 28px; font-weight: 800; color: #a3e635; }
+  canvas { border: 2px solid #ff2fb3; border-radius: 8px; max-width: 94vw; max-height: 70vh; }
+  #msg { min-height: 20px; color: #fda4af; }
+  a { color: #22d3ee; }
+</style>
+</head>
+<body>
+<h1>BLOCK DODGE</h1>
+<p>One prompt. One game. Move with &larr; &rarr; (or A / D) — dodge the blocks.</p>
+<div>Score: <span id="score">0</span></div>
+<canvas id="game" width="540" height="960"></canvas>
+<p id="msg"></p>
+<p>Built by my AI agent from one prompt, for a bounty on <a href="https://make.fun">make.fun</a>.</p>
+<script type="module" src="./game.js"></script>
+</body>
+</html>
